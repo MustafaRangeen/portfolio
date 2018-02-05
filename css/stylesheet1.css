@@ -1,0 +1,1001 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.wrapper-nav{
+    max-width: 85%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0 1%;
+}
+
+.logo{
+    display: inline-block;
+    height: 220px;
+    width: 300px;
+    margin: 0px;
+}
+.logo, a{
+    text-decoration: none;
+}
+nav, .wrapper-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+nav, ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;  
+    margin: 0 auto;
+    padding-left: 0;
+}
+li, a{
+   padding-top: 110px; /*det halve af logo højde*/
+}
+nav, ul, a{
+    color: #FFF;
+    text-decoration: none;
+    transition: all .5s ease; 
+    }
+a:hover{
+        color: #F64C72;
+    text-decoration: line-through;
+}
+#menu-toggle{
+    display: none; 
+}
+.label-toggle{
+    display: none;
+}
+header{
+    margin-bottom: 5px;
+}
+/***************************************
+Navbar slut
+******************************************/
+/***************************************
+Trekanter til forside 
+***********************************/
+#wrap{
+    height: 720px;
+    width: auto;
+    margin: 10px auto;
+    background-color: #FFF;
+}
+.triangle{
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    transition: all .2s ease-in-out;
+}
+
+.t1{
+    position: absolute;
+    margin-top: 40px;
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 400px;
+    background: url("img_trekanter/trekant1.png");
+    background-size: 100% 100%;
+    border: 1px solid black;
+}
+.t1:hover {
+    background: url(img_trekanter/logo.22.PNG);
+    background-size: cover no-repeat;
+    opacity: 0.5;
+    transition: all 1.5s ease;
+    border: 1px solid #072f4f;
+}
+.t2{
+position: absolute;
+    margin-top: 65px;
+    left: calc(35% - 100px);
+    width: 250px;
+    height: 100px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background: url(img_trekanter/trekant2.png);
+    background-size: 100% 100%;
+}
+.t2:hover{
+    background: url(img_trekanter/blog.PNG);
+    background-size: 100% 100%;
+    opacity: 0.8;
+    transition: all 1.5s ease;
+    border: 1px solid #072f4f;
+}
+.t3 {
+    position: absolute;
+    margin-top: 125px;
+    left: calc(20% - 100px);
+    width: 300px;
+    height: 150px;
+    background: url("img_trekanter/trekant3.png");
+    background-size: 100% 100%;
+}
+.t3:hover{
+    background: url(img_trekanter/habitat.png);
+    background-size: 100% 100%;
+    opacity: 0.8;
+    transition: all 1.5s ease;
+    border: 1px solid #072f4f; 
+}
+.t4 {
+    position: absolute;
+    margin-top: 480px;
+    left: calc(26% - 45px);
+    width: 170px;
+    height: 40px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background: url("img_trekanter/trekant4.png");
+    background-size: 100% 100%;
+}
+.t4:hover{
+    background: url(img_trekanter/trekant4.1.png);
+    background-size: 100% 100%;
+    opacity: 0.8;
+    transition: all 1.5s ease;
+}
+.t5 {
+    position: absolute;
+    margin-top:600px;
+    left: calc(50% + 180px);
+    width: 120px;
+    height: 0px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background: url("img_trekanter/trekant6.png");
+    background-size: 100% 100%;
+}
+.t5:hover{
+    background: url(img_trekanter/trekant4.1.png);
+    background-size: 100% 100%;
+    opacity: 0.8;
+    transition: all 1.5s ease;
+}
+.t6 {
+    position: absolute;
+    margin-top: 65px;
+    left: calc(65% - 150px);
+    width: 250px;
+    height: 100px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background: url("img_trekanter/trekant8.png");
+    background-size: 100% 100%;
+}
+.t6:hover{
+    background: url(img_trekanter/kontakt-img.jpg);
+    background-size: 100% 100%;
+    opacity: 0.8;
+    transition: all 1.5s ease;
+    border: 1px solid #072f4f;
+}
+.t7 {
+    position: absolute;
+    margin-top: 125px;
+    left: calc(80% - 200px);
+    width: 300px;
+    height: 150px;
+    background: url("img_trekanter/trekant9.png");
+    background-size: 100% 100%;
+}
+.t7:hover{
+    background: url(img_trekanter/muremester.png);
+    background-size: 100% 100%;
+    opacity: 0.8;
+    transition: all 1.5s ease;
+    border: 1px solid #072f4f;
+}
+.t8 {
+    position: absolute;
+    margin-top: 425px;
+    left: calc(85% - 245px);
+    width: 200px;
+    height: 30px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background: url("img_trekanter/trekant6.png");
+    background-size: 100% 100%;
+}
+.t8:hover{
+    background: url(img_trekanter/ask%20the%20nerd.PNG);
+    background-size: 100% 100%;
+    opacity: 0.8;
+    transition: all 1.5s ease;
+    border: 1px solid #072f4f;
+}
+/**********************************
+Forside trekanter slut
+*******************************************/
+/***********************************
+Seneste projekter 
+**************************************/
+#overskrift{
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 0.2pc;
+}
+.projekt_container {
+display:flex;
+flex-wrap:wrap;
+flex-direction:row;
+justify-content:space-between;
+margin:60px 1% 50px 1%;
+}
+
+.left {
+order:1;
+background:red;
+flex-basis:30%;
+height:300px;
+background-image:url(img_trekanter/habitat.png);
+background-size:cover;
+border: 3px solid #FFF;
+}
+
+.middle {
+order:2;
+background:green;
+flex-basis:30%;
+height:300px;
+background-image:url(img_trekanter/ask%20the%20nerd.PNG);
+background-size:cover;
+border: 3px solid #FFF;
+}
+
+.right {
+order:3;
+background:#ff0;
+flex-basis:30%;
+height:300px;
+background-image:url(img_trekanter/muremester.png);
+background-size:cover;
+border: 3px solid #FFF;
+}
+
+.front_p{
+color:#FFF; 
+text-align: center;
+text-decoration-line: underline;
+margin-top: 320px;
+margin-bottom: 20px;
+font-size: 28px;
+font-weight: 550;
+letter-spacing: 3px;
+}
+/************************
+projekt container slut 
+*******************************************/
+footer {
+color:#072f40;
+background-color:#FFF;
+max-height: 200px;
+width:100%;
+display:flex;
+justify-content:space-between;
+border-top:4px solid black;
+border-radius: 30% 30% 0% 0%;
+margin-top: 100px;
+clear:both;
+}
+footer .footer-box {
+display:flex;
+flex-direction:column;
+text-align: center;
+    margin-top: 30px;
+}
+footer .footer-box .topic {
+font-size:1.2em
+}
+footer .footer-box {
+margin-right:100px;
+margin-left:100px;
+line-height:30px
+}
+
+.links img {
+width:100px
+}
+.sitemap_header {
+margin-bottom:0;
+margin-top:0;
+    width: 250px;
+}
+#lb, #site {
+color: black; 
+    padding-top: 40px;
+}
+/*************************************
+Footer forside.... slut 
+*********************************************/
+.hero_imgMIG {
+width:100%;
+min-height: 400px;
+margin:0;
+padding:50px 0;
+background:url(img_trekanter/hero-port.png) no-repeat center center;
+background-size:cover;
+border-top:3px solid #fff;
+border-bottom:3px solid #fff;
+}
+.om_container {
+background:rgba(255,255,255,0.8);
+padding:0.5% 2.5%;
+margin-top: 30px;
+text-align:left;
+float: right;
+width: 900px;
+height: 350px;
+letter-spacing: 0.6;
+line-height: 1.5;
+}
+#ommig_header{
+color: #F64C72;
+text-transform: uppercase;
+text-decoration: underline;
+font-size: 36px; 
+font-weight: 700;
+}
+#citat{
+    font-size: 22px;
+    font-family: cursive;
+    letter-spacing: 0.2em;
+    line-height: 2.0em;
+    color: #072f4f;
+    
+}
+/**************************
+Heroimg - portfolio slut
+********************************/
+/************************************
+
+Time line 
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+.container_ommig{
+    display: flex;
+}
+article{
+    margin: 2% 5%  0 ;
+    color: #FFF;
+}
+#om_mig{
+    font-size: 36px;
+    letter-spacing: 0.2em;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#bio_mig{
+    font-size: 18px;
+    line-height: 1.5em;  
+}
+.evne_mig{
+    text-align: center;
+}
+.container_titel{
+    color: #FFF;
+    font-size: 48px;
+    letter-spacing: 0.2em;
+}
+.container_skills{
+    background-color: #FFF;
+}
+#img_mig{
+    margin: 5% 8% 0 0;
+    height: 800px;
+    width: 600px;
+}
+.hero_img {
+margin:0;
+height:200px;
+background:url(img_trekanter/designer-desk.jpg) no-repeat center;
+background-size:cover;
+border:1px solid #000;
+}
+
+.contianer_tekst {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+overflow:hidden;
+font-weight:300;
+text-transform:uppercase
+}
+
+.container_tekst,h1 {
+text-align:center;
+font-size:62px;
+letter-spacing:.2em;
+}
+
+.container_tekst h1 span {
+display:inline-block;
+clear:both
+}
+
+.undertekst {
+margin:20px;
+display:block;
+font-size:26px;
+text-shadow:0 0 20px #2d63a9;
+text-align: center;
+}
+
+.container2 {
+width:100%;
+height:380px;
+color:#fff;
+letter-spacing:.2em;
+margin:0;
+border-bottom:2px solid #fff;
+clear:both
+}
+
+.container_info {
+display:flex;
+justify-content: space-between;
+max-width:100%;
+margin:3% 15%;
+}
+
+#map {
+margin-top:40px;
+}
+
+#info {
+font-size:20px;
+margin-top:30px
+}
+
+#info a {
+color:#FFF;
+text-decoration:none
+}
+
+#streg {
+width:50px;
+border:1px solid #fff
+}
+.socialmedia{
+text-align: center;
+}
+.fa {
+padding:15px;
+font-size:10px;
+width:30px;
+text-align:center;
+text-decoration:none;
+margin:0px 2px;
+}
+
+.fa:hover {
+opacity:.7;
+color:#f0f8ff;
+text-decoration:none
+}
+
+.fa-facebook {
+background:#3B5998;
+color:#fff
+}
+
+.fa-linkedin {
+background:#007bb5;
+color:#fff
+}
+
+.fa-instagram {
+background:linear-gradient(to right,pink 0%,orange 0%,#ff3232 0%,purple 200%);
+color:#fff
+}
+.kontakt_mig .form_container {
+display:flex;
+flex-direction:column;
+}
+
+.kontakt_mig .form_container .myForm {
+padding:0 5%;
+color:#D5D5D5;
+border-radius:100px
+}
+
+.info {
+width:100%;
+color:#f0f8ff;
+text-align:center;
+margin-bottom:50px;
+margin-top:50px
+}
+
+.form_item {
+float:left;
+width:100%
+}
+
+.form_col1 {
+float:left;
+width:42%;
+margin:0;
+clear:both;
+color:#000
+}
+
+.form_col2 {
+margin-top:-135px;
+display:right;
+width:57.3%;
+color:#000
+}
+
+textarea {
+width:100%;
+height:198px;
+font-size:20px;
+border-left:5px solid #072f4f;
+}
+
+input[type=text],input[type=mail] {
+width:100%;
+height:60px;
+font-size:18px;
+margin-top:3px
+}
+
+#sub-btn {
+width:20%;
+display:block;
+float:right;
+background-color:transparent;
+color:#fff;
+border:solid #fff;
+border-radius:5px;
+cursor:pointer;
+box-shadow:0 .1px 75px 0 rgba(0,0,0,.20);
+margin:5px 5px 50px
+}
+
+input[type=submit] {
+border:none;
+font-size:1.9em;
+padding:10px;
+text-align:center;
+background-color:#dcdcdc;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+text-decoration:none;
+color:#000
+}
+/************************
+case 1.1 
+************************/
+.case1_hero{
+    background-image: url(img_trekanter/habitat_hero.PNG);
+    height: 300px;
+    background-size: cover;
+    border: 2px solid #FFF;
+    margin-bottom: 30px; 
+}
+#overskrift_1{
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 3px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+.projekt_prae{
+    background-color: #FFF;
+    color: #072f4f;
+    line-height: 1.5em;
+    font-size: 18px;
+    padding: 1% 2.5%;
+    
+}
+#case1{
+    color: #F64C72;
+}
+#wrap2{
+    height: 610px;
+    width: auto;
+    margin: 10px auto;
+    background-color: #fff;
+}
+.f1{
+    position: absolute;
+    margin-top: 40px;
+    left: calc(50% + 40px);
+    width: 600px;
+    height: 400px;
+    background: url("img_trekanter/habitat_landing.PNG");
+    background-size: 100% 100%;
+    border: 1px solid #FFF;
+}
+.f2{
+    position: absolute;
+    margin-top: 340px;
+    left: calc(50% - 650px);
+    width: 650px;
+    height: 100px;
+    background: url("img_trekanter/habitat_img3.PNG");
+    background-size: 100% 100%;
+    border: 1px solid #FFF;
+}
+.f3{
+    position: absolute;
+    margin-top: 40px;
+    left: calc(50% - 650px);
+    width: 320px;
+    height: 100px;
+    background: url("img_trekanter/habitat_img1.PNG");
+    background-size: 100% 100%;
+    border: 1px solid #FFF;
+}
+.f4{
+    position: absolute;
+    margin-top: 40px;
+    left: calc(50% - 320px);
+    width: 320px;
+    height: 100px;
+    background: url("img_trekanter/habitat_img2.PNG");
+    background-size: 100% 100%;
+    border: 1px solid #FFF;
+}
+.f5{
+    position: absolute;
+    margin-top: 155px;
+    left: calc(50% - 600px);
+    width: 500px;
+    height: 175px;
+    background: url("img_trekanter/vrogar.png");
+    background-size: 100% 100%;
+}
+
+/*******************************************************************
+Case 2 
+***********************************************************************/
+.case2_hero{
+    background-image: url(img_trekanter/ask%20the%20nerd.PNG);
+    height: 300px;
+    background-size: cover;
+    border: 2px solid #FFF;
+    margin-bottom: 30px; 
+}
+
+#case2_overskrift{
+    color: #F64C72;
+    margin-top: 150px;
+
+}
+#overskrift_2, #overskrift_3{
+    font-size: 28px;
+    font-weight: 500;
+}
+#mini_heroimg {
+    background-image: url(img_trekanter/M%C3%85LING1.PNG);
+    height: 300px;
+    width: 70%;
+    background-size: 100% 100%;
+    margin: 1% 15%;
+    border: 2px solid #FFF;
+}
+#case2_farver{
+    background-color: #FFF;
+    height: 670px;
+    color: #072f4f;
+    line-height: 1.5em;
+    font-size: 18px;
+    padding: 0.5% 2.5%
+}
+.p1{
+position: absolute;
+    margin-top: 2px;
+    left: calc(35% - 300px);
+    width: 500px;
+    height: 300px;
+    background: url(img_trekanter/persona1.PNG);
+    background-size: 100% 100%;
+    border: 2px solid black;
+}
+
+.p2 {
+    position: absolute;
+    margin-top: 50px;
+    left: calc(20% + 600px);
+    width: 500px;
+    height: 300px;
+    background: url("img_trekanter/moodboard_case2.PNG");
+    background-size: 100% 100%;
+    border: 2px solid black;
+}
+#case2_logo{
+    background-color: #FFF;
+    height: 720px;
+    color: #072f4f;
+    line-height: 1.5em;
+    font-size: 18px;
+    padding: 0.5% 2.5%;
+    margin-top: 15px;
+}
+.l1{
+position: absolute;
+    margin-top: 2px;
+    left: calc(35% - 300px);
+    width: 500px;
+    height: 300px;
+    background: url(img_trekanter/logo_case2.PNG);
+    background-size: 100% 100%;
+    border: 2px solid black;
+}
+.w2 {
+    position: absolute;
+    margin-top: 50px;
+    left: calc(20% + 600px);
+    width: 500px;
+    height: 300px;
+    background: url("img_trekanter/case2_mock.PNG");
+    background-size: 100% 100%;
+    border: 2px solid black;
+}
+#case2_refleksion{
+    background-color: #FFF;
+    height: 300px;
+    color: #072f4f;
+    line-height: 1.5em;
+    font-size: 18px;
+    padding: 0.5% 2.5%;
+    margin-top: 15px;
+    margin-bottom: -80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/***** MEDIA QUERY  ********/
+@media screen and (max-width: 768px) {
+    /*navbar */
+    header{
+        margin-bottom: 50px;
+    }
+   nav ul a {
+    color: #072f4f;
+  }
+    a:hover{
+        color: #FFF;
+        text-decoration: line-through;
+        transition: all 1.5s ease;
+    }
+  nav ul {
+    background-color: #E84545;
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+  }
+  nav li {
+    border-bottom: 2px solid #53354A;
+    color: #53354A;
+    display: block;
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100%; /*61vh for at få et glidende årgang*/
+    visibility: visible;
+  }
+  nav .label-toggle {
+    background: linear-gradient(to bottom, #F64C72 0%, #E84545 20%, transparent 20%, transparent 40%, #E84545 40%, #E84545 60%, transparent 60%, transparent 80%, #E84545 80%, #E84545 100%);
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    margin-top: 1em;
+    margin-right: 10px;
+    width: 35px;
+  }
+  nav .wrapper {
+    display: block;
+  }
+    nav .logo {
+        display: none;
+    }
+    /*navbar slut*/
+    #overskrift{
+        margin-top: 60px;
+    }
+    .container {
+    flex-wrap:nowrap;
+    }
+    .left {
+    flex-basis:100%;
+    order:1;
+    margin: 5.5%
+    }
+    .middle {
+    flex-basis:100%;
+    order:2;
+    margin:5.5%
+    }
+    .right {
+    flex-basis:100%;
+    order:3;
+    margin:5.5%
+    }
+    footer, sitemap-wrapper, social-wrapper{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
